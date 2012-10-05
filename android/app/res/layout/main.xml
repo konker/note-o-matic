@@ -1,13 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    style="@style/Screen"
     >
-    <TextView
-        android:id="@id/textMessage" 
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        />
+    <LinearLayout
+        android:id="@id/mainInfoPanel"
+        style="@style/MainInfoPanel"
+        >
+        <TextView
+            android:id="@id/mainInfoPanelText"
+            android:text="@string/main_info_panel_text_1"
+            style="@style/InfoText"
+            />
+        <Button
+            android:id="@id/buttonSimplenoteSettings"
+            android:text="@string/go_to_simplenote_settings"
+            style="@style/InfoButton"
+            />
+        <TextView
+            android:id="@id/mainInfoPanelText"
+            android:text="@string/main_info_panel_text_2"
+            style="@style/InfoText"
+            />
+        <Button
+            android:id="@id/buttonSimplenote"
+            android:text="@string/simplenote_website"
+            style="@style/InfoButton"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+android:id/list"
+        style="@style/NoteList"
+        >
+    </ListView>
 </LinearLayout>
 

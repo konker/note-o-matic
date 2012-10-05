@@ -2,5 +2,10 @@
 <resources>
     <item type="id" name="textMessage"/>
     <item type="id" name="menuPreferences"/>
+    <item type="id" name="textRegisterInstructions"/>
+    <item type="id" name="buttonSimplenote"/>
+    <item type="id" name="mainInfoPanel"/>
+    <item type="id" name="mainInfoPanelText"/>
+    <item type="id" name="buttonSimplenoteSettings"/>
 </resources>
 

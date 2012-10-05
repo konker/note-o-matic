@@ -46,6 +46,21 @@ public class NoteOMaticApplication extends Application implements OnSharedPrefer
         Log.i(NoteOMaticApplication.TAG, "App.onSharedPreferenceChanged");
         return;
     }
+
+    public String getEmail() 
+    {
+        return prefs.getString(getString(R.string.email), "");
+    }
+
+    public String getPassword()
+    {
+        return prefs.getString(getString(R.string.password), "");
+    }
+
+    public boolean isAccountConfigured()
+    {
+        return (getEmail() != "" && getPassword() != "");
+    }
 }
 
 

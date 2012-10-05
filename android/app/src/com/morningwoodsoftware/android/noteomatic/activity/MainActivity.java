@@ -5,9 +5,10 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.net.Uri;
 
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
@@ -21,8 +22,6 @@ public class MainActivity extends SherlockActivity
 {
     private NoteOMaticApplication app;
 
-    private TextView textMessage;
-
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -31,9 +30,43 @@ public class MainActivity extends SherlockActivity
         setContentView(R.layout.main);
 
         this.app = (NoteOMaticApplication) getApplication();
+        getSupportActionBar().setTitle(R.string.app_name);
 
-        textMessage = (TextView)findViewById(R.id.textMessage);
-        textMessage.setText(R.string.app_name);
+        LinearLayout mainInfoPanel = (LinearLayout)findViewById(R.id.mainInfoPanel);
+        if (app.isAccountConfigured()) {
+            Log.d(NoteOMaticApplication.TAG, "GONE");
+            mainInfoPanel.setVisibility(View.GONE);
+        }
+        else {
+            Log.d(NoteOMaticApplication.TAG, "VISIBLE");
+            mainInfoPanel.setVisibility(View.VISIBLE);
+
+            Button buttonSimplenoteSettings = (Button)findViewById(R.id.buttonSimplenoteSettings);
+            buttonSimplenoteSettings.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view)
+                {
+                    Log.d(NoteOMaticApplication.TAG, "Main.buttonSimplenoteSettings clicked");
+                    Intent intent = new Intent(MainActivity.this, PrefsSimplenoteActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    startActivity(intent);
+                }
+
+            });
+
+            Button buttonSimplenote = (Button)findViewById(R.id.buttonSimplenote);
+            buttonSimplenote.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view)
+                {
+                    Log.d(NoteOMaticApplication.TAG, "Main.buttonSimplenote clicked");
+                    Intent intent = new Intent(Intent.ACTION_VIEW,
+                                        Uri.parse(getString(R.string.simplenote_register_url)));
+                    startActivity(intent);
+                }
+
+            });
+        }
         Log.d(NoteOMaticApplication.TAG, "MainActivity.onCreate");
     }
 

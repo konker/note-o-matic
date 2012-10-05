@@ -3,9 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     >
     <EditTextPreference
-        android:title="@string/title_username" 
-        android:summary="@string/summary_username" 
-        android:key="@string/username"
+        android:title="@string/title_email" 
+        android:summary="@string/summary_email" 
+        android:key="@string/email"
         />
     <EditTextPreference
         android:title="@string/title_password" 

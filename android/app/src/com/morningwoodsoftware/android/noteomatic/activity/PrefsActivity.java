@@ -24,7 +24,9 @@ public class PrefsActivity extends SherlockPreferenceActivity
 
         addPreferencesFromResource(R.xml.prefs);
         setContentView(R.layout.prefs);
+        getSupportActionBar().setTitle(R.string.menu_preferences);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         Log.d(NoteOMaticApplication.TAG, "PrefsActivity.onCreate");
     }
 

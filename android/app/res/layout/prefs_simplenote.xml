@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Screen"
+    >
+    <ListView
+        android:id="@android:id/list"
+        style="@style/SettingsList"
+        />
+    <LinearLayout
+        style="@style/InfoPanel"
+        >
+        <TextView
+            android:id="@id/textRegisterInstructions"
+            android:text="@string/register_instructions"
+            style="@style/InfoText"
+            />
+        <Button
+            android:id="@id/buttonSimplenote"
+            android:text="@string/simplenote_website"
+            style="@style/InfoButton"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+
+

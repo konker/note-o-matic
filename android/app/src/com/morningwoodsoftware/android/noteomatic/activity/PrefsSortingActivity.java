@@ -11,7 +11,7 @@ import com.actionbarsherlock.app.SherlockPreferenceActivity;
 import com.morningwoodsoftware.android.noteomatic.R;
 import com.morningwoodsoftware.android.noteomatic.NoteOMaticApplication;
 
-public class PrefsSyncActivity extends SherlockPreferenceActivity
+public class PrefsSortingActivity extends SherlockPreferenceActivity
 {
     private NoteOMaticApplication app;
 
@@ -22,12 +22,12 @@ public class PrefsSyncActivity extends SherlockPreferenceActivity
         super.onCreate(savedInstanceState);
         this.app = (NoteOMaticApplication) getApplication();
 
-        addPreferencesFromResource(R.xml.prefs_sync);
+        addPreferencesFromResource(R.xml.prefs_sorting);
         setContentView(R.layout.prefs);
         getSupportActionBar().setTitle(R.string.menu_preferences);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Log.d(NoteOMaticApplication.TAG, "PrefsSyncActivity.onCreate");
+        Log.d(NoteOMaticApplication.TAG, "PrefsSortingActivity.onCreate");
     }
 
     /* Lifecycle methods [TODO: remove if uneeded?] */
@@ -35,42 +35,42 @@ public class PrefsSyncActivity extends SherlockPreferenceActivity
     protected void onPause()
     {
         super.onPause();
-        Log.d(NoteOMaticApplication.TAG, "PrefsSyncActivity.onPause");
+        Log.d(NoteOMaticApplication.TAG, "PrefsSortingActivity.onPause");
     }
 
     @Override
     protected void onResume()
     {
         super.onResume();
-        Log.d(NoteOMaticApplication.TAG, "PrefsSyncActivity.onResume");
+        Log.d(NoteOMaticApplication.TAG, "PrefsSortingActivity.onResume");
     }
 
     @Override
     protected void onStart()
     {
         super.onStart();
-        Log.d(NoteOMaticApplication.TAG, "PrefsSyncActivity.onStart");
+        Log.d(NoteOMaticApplication.TAG, "PrefsSortingActivity.onStart");
     }
 
     @Override
     protected void onRestart()
     {
         super.onRestart();
-        Log.d(NoteOMaticApplication.TAG, "PrefsSyncActivity.onRestart");
+        Log.d(NoteOMaticApplication.TAG, "PrefsSortingActivity.onRestart");
     }
 
     @Override
     protected void onStop()
     {
         super.onStop();
-        Log.d(NoteOMaticApplication.TAG, "PrefsSyncActivity.onStop");
+        Log.d(NoteOMaticApplication.TAG, "PrefsSortingActivity.onStop");
     }
 
     @Override
     protected void onDestroy()
     {
         super.onDestroy();
-        Log.d(NoteOMaticApplication.TAG, "PrefsSyncActivity.onDestroy");
+        Log.d(NoteOMaticApplication.TAG, "PrefsSortingActivity.onDestroy");
     }
 
     @Override

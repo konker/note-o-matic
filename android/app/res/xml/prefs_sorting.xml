@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <ListPreference
+        android:title="@string/title_sort_by"
+        android:summary="@string/summary_sort_by"
+        android:key="@string/sort_by"
+        android:entries="@array/settings_sort_by"
+        android:entryValues="@array/settings_sort_by_values"
+        android:defaultValue="modified"
+        >
+    </ListPreference>
+    <ListPreference
+        android:title="@string/title_sort_order"
+        android:summary="@string/summary_sort_order"
+        android:key="@string/sort_order"
+        android:entries="@array/settings_sort_order"
+        android:entryValues="@array/settings_sort_order_values"
+        android:defaultValue="descending"
+        >
+    </ListPreference>
+</PreferenceScreen>

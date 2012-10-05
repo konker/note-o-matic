@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_sort_by">
+        <item name="modified">Modified</item>
+        <item name="alphabetically">Alphabetically</item>
+        <item name="last_created">Last Created</item>
+    </string-array>
+    <string-array name="settings_sort_by_values">
+        <item name="modified">modified</item>
+        <item name="alphabetically">alphabetically</item>
+        <item name="last_created">last_created</item>
+    </string-array>
+    <string-array name="settings_sort_order">
+        <item name="descending">Descending</item>
+        <item name="ascendnig">Ascendnig</item>
+    </string-array>
+    <string-array name="settings_sort_order_values">
+        <item name="descending">descending</item>
+        <item name="ascendnig">ascendnig</item>
+    </string-array>
+</resources>
+

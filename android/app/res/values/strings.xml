@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Note-O-Matic</string>
+    <string name="simplenote_url">http://simplenoteapp.com/</string>
+    <string name="simplenote_register_url">https://simple-note.appspot.com/create/</string>
     <string name="menu_preferences">Settings</string>
     <string name="button_simplenote_category_key">button_simplenote_category_key</string>
+    <string name="main_info_panel_text_1">You have not configured your Simplenote email and password. Please do so to continue.</string>
+    <string name="main_info_panel_text_2">If you do not have a Simplenote account, go to the Simplenote website to create one. It\'s free!</string>
+    <string name="go_to_simplenote_settings">Go to Settings</string>
     <string name="simplenote">Simplenote Account</string>
-        <string name="username">username</string>
-        <string name="title_username">Username</string>
-        <string name="summary_username">SUMMARY</string>
+        <string name="email">email</string>
+        <string name="title_email">Email</string>
+        <string name="summary_email">SUMMARY</string>
         <string name="password">password</string>
         <string name="title_password">Password</string>
         <string name="summary_password">SUMMARY</string>
-    <string name="button_sync_category_key">button_simplenote_category_key</string>
+        <string name="register_instructions">
+            If you don\'t have a Simplenote account or you have forgotten your password, click the button below to go to the Simplenote website. It\'s free!
+        </string>
+        <string name="simplenote_website">Go to the Website</string>
+    <string name="button_sync_category_key">button_sync_category_key</string>
     <string name="sync">Sync Settings</string>
+    <string name="button_sorting_category_key">button_sorting_category_key</string>
+    <string name="sorting">Sorting</string>
+        <string name="sort_by">sort by</string>
+        <string name="title_sort_by">Sort by</string>
+        <string name="summary_sort_by">SUMMARY</string>
+        <string name="sort_order">sort order</string>
+        <string name="title_sort_order">Sort order</string>
+        <string name="summary_sort_order">SUMMARY</string>
 </resources>

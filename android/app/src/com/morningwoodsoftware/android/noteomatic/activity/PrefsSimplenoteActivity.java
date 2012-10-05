@@ -3,6 +3,11 @@ package com.morningwoodsoftware.android.noteomatic.activity;
 import android.util.Log;
 import android.os.Bundle;
 import android.content.Intent;
+import android.widget.Button;
+import android.widget.TextView;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.net.Uri;
 
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
@@ -23,8 +28,22 @@ public class PrefsSimplenoteActivity extends SherlockPreferenceActivity
         this.app = (NoteOMaticApplication) getApplication();
 
         addPreferencesFromResource(R.xml.prefs_simplenote);
-        setContentView(R.layout.prefs);
+        setContentView(R.layout.prefs_simplenote);
+        getSupportActionBar().setTitle(R.string.menu_preferences);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        Button buttonSimplenote = (Button)findViewById(R.id.buttonSimplenote);
+        buttonSimplenote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                Log.d(NoteOMaticApplication.TAG, "Main.buttonSimplenote clicked");
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                                    Uri.parse(getString(R.string.simplenote_register_url)));
+                startActivity(intent);
+            }
+        });
+
         Log.d(NoteOMaticApplication.TAG, "PrefsSimplenoteActivity.onCreate");
     }
 
