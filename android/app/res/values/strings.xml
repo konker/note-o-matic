@@ -2,4 +2,14 @@
 <resources>
     <string name="app_name">Note-O-Matic</string>
     <string name="menu_preferences">Settings</string>
+    <string name="button_simplenote_category_key">button_simplenote_category_key</string>
+    <string name="simplenote">Simplenote Account</string>
+        <string name="username">username</string>
+        <string name="title_username">Username</string>
+        <string name="summary_username">SUMMARY</string>
+        <string name="password">password</string>
+        <string name="title_password">Password</string>
+        <string name="summary_password">SUMMARY</string>
+    <string name="button_sync_category_key">button_simplenote_category_key</string>
+    <string name="sync">Sync Settings</string>
 </resources>

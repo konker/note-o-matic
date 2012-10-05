@@ -25,6 +25,14 @@
             android:label="@string/app_name"
             >
         </activity>
+        <activity android:name=".activity.PrefsSimplenoteActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+        <activity android:name=".activity.PrefsSyncActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
     </application>
 
     <!-- permissions -->
