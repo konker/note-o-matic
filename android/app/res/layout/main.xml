@@ -13,7 +13,7 @@
             />
         <Button
             android:id="@id/buttonSimplenoteSettings"
-            android:text="@string/go_to_simplenote_settings"
+            android:text="@string/sign_in"
             style="@style/InfoButton"
             />
         <TextView
@@ -23,7 +23,7 @@
             />
         <Button
             android:id="@id/buttonSimplenote"
-            android:text="@string/simplenote_website"
+            android:text="@string/create_account"
             style="@style/InfoButton"
             />
     </LinearLayout>

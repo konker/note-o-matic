@@ -8,6 +8,7 @@
     <string name="main_info_panel_text_1">You have not configured your Simplenote email and password. Please do so to continue.</string>
     <string name="main_info_panel_text_2">If you do not have a Simplenote account, go to the Simplenote website to create one. It\'s free!</string>
     <string name="go_to_simplenote_settings">Go to Settings</string>
+    <string name="sign_in">Sign in</string>
     <string name="simplenote">Simplenote Account</string>
         <string name="email">email</string>
         <string name="title_email">Email</string>
@@ -18,6 +19,7 @@
         <string name="register_instructions">
             If you don\'t have a Simplenote account or you have forgotten your password, click the button below to go to the Simplenote website. It\'s free!
         </string>
+        <string name="create_account">Create an account</string>
         <string name="simplenote_website">Go to the Website</string>
     <string name="button_sync_category_key">button_sync_category_key</string>
     <string name="sync">Sync Settings</string>
