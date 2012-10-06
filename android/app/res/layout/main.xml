@@ -28,9 +28,10 @@
             />
     </LinearLayout>
     <ListView
-        android:id="@+android:id/list"
+        android:id="@id/noteList"
         style="@style/NoteList"
         >
+        <!-- NOTES GO HERE -->
     </ListView>
 </LinearLayout>
 

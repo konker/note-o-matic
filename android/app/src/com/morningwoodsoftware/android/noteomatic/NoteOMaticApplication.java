@@ -49,17 +49,22 @@ public class NoteOMaticApplication extends Application implements OnSharedPrefer
 
     public String getEmail() 
     {
+        Log.d(NoteOMaticApplication.TAG, getString(R.string.email));
+        Log.d(NoteOMaticApplication.TAG, "|" + prefs.getString(getString(R.string.email), "ED") + "|");
         return prefs.getString(getString(R.string.email), "");
     }
 
     public String getPassword()
     {
+        Log.d(NoteOMaticApplication.TAG, getString(R.string.password));
+        Log.d(NoteOMaticApplication.TAG, "|" + prefs.getString(getString(R.string.password), "PD") + "|");
         return prefs.getString(getString(R.string.password), "");
     }
 
     public boolean isAccountConfigured()
     {
-        return (getEmail() != "" && getPassword() != "");
+        Log.d(NoteOMaticApplication.TAG, "[" + getEmail() + "][" + getPassword() + "]");
+        return (!getEmail().equals("") && !getPassword().equals(""));
     }
 }
 
